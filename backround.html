@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blikající světla</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #000;
+            overflow: hidden;
+        }
+
+        .light {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: white;
+            opacity: 0;
+            animation: blink 1s infinite;
+        }
+
+        @keyframes blink {
+            0% {
+                opacity: 0;
+            }
+            50% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0;
+            }
+        }
+
+        /* Random positioning and sizing for lights */
+        .light:nth-child(odd) {
+            animation-duration: 1.5s;
+        }
+
+        .light:nth-child(even) {
+            animation-duration: 2s;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        // Funkce pro vytvoření blikajících světel
+        function createLights(numLights) {
+            for (let i = 0; i < numLights; i++) {
+                const light = document.createElement('div');
+                light.classList.add('light');
+                light.style.top = `${Math.random() * 100}vh`;  // Random Y position
+                light.style.left = `${Math.random() * 100}vw`; // Random X position
+                light.style.animationDelay = `${Math.random() * 3}s`; // Random delay for blinking
+                document.body.appendChild(light);
+            }
+        }
+
+        // Zavolání funkce pro vytvoření světel
+        createLights(50);  // Zde můžeš změnit počet blikajících světel
+    </script>
+</body>
+</html>
