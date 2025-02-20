@@ -1,42 +1,73 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="cs">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flashing Lightss</title>
-    <style>
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            background-color: black;
-        }
-
-        .flashing-text {
-            font-size: 3em;
-            color: white;
-            text-align: center;
-            animation: flashing 1s infinite;
-        }
-
-        @keyframes flashing {
-            0% {
-                opacity: 1;
-            }
-            50% {
-                opacity: 0;
-            }
-            100% {
-                opacity: 1;
-            }
-        }
-    </style>
+    <title>Cestování po Evropě</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="flashing-text">
-        FLASHING TEXT
-    </div>
+    <header>
+        <h1>Cestování po Evropě</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Domů</a></li>
+                <li><a href="destinace.html">Destinace</a></li>
+                <li><a href="tipy.html">Tipy na cestování</a></li>
+                <li><a href="o-nas.html">O nás</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Vítejte na našem webu!</h2>
+            <p>Objevte krásy Evropy a načerpejte inspiraci pro vaše další cesty.</p>
+            <img src="destinace1.jpg" alt="Krásná evropská krajina">
+        </section>
+    </main>
+    <footer>
+        <p>Pouze pro studijní účely</p>
+    </footer>
 </body>
-</html>
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #35424a;
+    color: #ffffff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #35424a;
+    color: #ffffff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
