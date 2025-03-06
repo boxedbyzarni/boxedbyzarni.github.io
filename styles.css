@@ -39,4 +39,7 @@ footer {
     position: relative;
     bottom: 0;
     width: 100%;
+}img {
+    width: 50%; 
+    height: auto;
 }
