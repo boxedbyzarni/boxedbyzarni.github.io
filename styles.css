@@ -26,13 +26,3 @@ nav ul li a {
     color: #ffffff;
     text-decoration: none;
 }
-
-main {
-    padding: 20px;
-}
-#myImage {
-    max-width: 100%; /* Zmenší obrázek na maximální šířku 100% */
-    height: auto; /* Zachová poměr stran */
-    display: block; /* Umožní centrální zarovnání */
-    margin: 0 auto; /* Zarovná obrázek na střed */
-}
