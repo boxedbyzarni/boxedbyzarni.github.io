@@ -30,16 +30,9 @@ nav ul li a {
 main {
     padding: 20px;
 }
-
-footer {
-    text-align: center;
-    padding: 10px 0;
-    background: #35424a;
-    color: #ffffff;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    img {
-        width: 50%; 
-        height: auto; 
-    }
+#myImage {
+    max-width: 100%; /* Zmenší obrázek na maximální šířku 100% */
+    height: auto; /* Zachová poměr stran */
+    display: block; /* Umožní centrální zarovnání */
+    margin: 0 auto; /* Zarovná obrázek na střed */
+}
